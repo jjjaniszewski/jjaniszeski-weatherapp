@@ -1,0 +1,6 @@
+### Get weather load logs for a specific date range
+GET http://localhost:5123/api/weather-load-logs?fromDate=2025-04-04T00:00:00Z&toDate=2025-04-10T00:00:00Z
+
+### Get weather load logs for a specific date range
+GET http://localhost:5123/api/weather-load-logs/Washington_us_20250406092000732_ead613aa-c20d-4bac-8b11-8e75d0fa0bc5/payload
+
