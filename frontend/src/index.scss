@@ -1,0 +1,25 @@
+@import "./styles/variables.scss";
+
+:root {
+    font-family: $font-family;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: $background-color;
+    color: $text-color;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    min-width: $breakpoint-sm;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#root {
+    width: 100%;
+}

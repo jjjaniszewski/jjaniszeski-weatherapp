@@ -30,6 +30,9 @@ npm install           # Install dependencies
 npm run dev          # Start development server
 ```
 
+![Frontend Screenshot](./assets/frontend-visual.png)
+
+
 3. **Database Setup**
 ```bash
 cd backend

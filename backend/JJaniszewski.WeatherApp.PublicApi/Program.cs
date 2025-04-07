@@ -9,6 +9,17 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddAuthorization();
 
+// Configure CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173") // Vite's default development port
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 // Configure Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -35,6 +46,9 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = string.Empty; // Serves the Swagger UI at the app's root
     });
 }
+
+// Use CORS before other middleware
+app.UseCors("AllowFrontend");
 
 app.UseHttpsRedirection();
 
