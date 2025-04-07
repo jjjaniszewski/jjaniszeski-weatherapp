@@ -1,0 +1,6 @@
+@JJaniszewski.WeatherApp.PublicApi_HostAddress = http://localhost:5115
+
+GET {{JJaniszewski.WeatherApp.PublicApi_HostAddress}}/weather/
+Accept: application/json
+
+###

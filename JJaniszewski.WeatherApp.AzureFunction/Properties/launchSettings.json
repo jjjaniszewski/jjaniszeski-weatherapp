@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "JJaniszewski.WeatherApp.AzureFunction": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 5123",
+      "launchBrowser": false
+    }
+  }
+}
